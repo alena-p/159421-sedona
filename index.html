@@ -2,11 +2,146 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона главная</title>
+    <link rel="stylesheet" href="css/reset.css">
   </head>
   <body>
+  	<header class="main-header">
+  		<div class="logo">
+        <img src="http://placehold.it/138x70" alt="Седона логотип" width="138" height="70" >
+  		</div>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта шатата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+  	</header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <main>
+      <div class="promo">
+        <div class="promo-image">
+          <img src="http://placehold.it/460x355" alt="Welcome" width="460" height="355">
+        </div>
+        <div class="promo-text">
+          <div class="promo-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</div>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+      </div>
+
+      <div class="index-content">
+        <div class="row bg-blue">
+          <div class="column-1-3">
+            <h2 class="column-title">Настоящий городок</h2>
+            <div class="column-subtitle">- №1 -</div>
+            <p class="column-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="column-2-3">
+            <img src="http://placehold.it/800x255" alt="Виды Седоны" width="800" height="255">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-1-3">
+            <div class="column-icon">
+              <img src="http://placehold.it/76x73" alt="Иконка жилье" width="76" height="73">
+              <h2 class="column-title">Жилье</h2>
+              <p class="column-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+          </div>
+          <div class="column-1-3">
+            <div class="column-icon">
+              <img src="http://placehold.it/76x72" alt="Иконка еда" width="76" height="72">
+              <h2 class="column-title">Еда</h2>
+              <p class="column-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+          </div>
+          <div class="column-1-3">
+            <div class="column-icon">
+              <img src="http://placehold.it/65x77" alt="Иконка сувениры" width="65" height="77">
+              <h2 class="column-title">Сувениры</h2>
+              <p class="column-text">Не только китайского, но и местного производства!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-blue">
+          <div class="column-2-3">
+            <img src="http://placehold.it/800x255" alt="Виды Седоны" width="800" height="255">
+          </div>
+          <div class="column-1-3">
+            <h2 class="column-title">Там есть мост дьявола</h2>
+            <div class="column-subtitle">- №2 -</div>
+            <p class="column-text">Да, по нему можно пройти! Если конечно осмелитесь</p>
+          </div>
+        </div>
+        <div class="row bg-grey">
+          <div class="column-1-3">
+            <h2 class="column-title">Небольшая площадь</h2>
+            <div class="column-subtitle">- №3 -</div>
+            <p class="column-text">Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="column-1-3">
+            <h2 class="column-title">Красивая дорога</h2>
+            <div class="column-subtitle">- №4 -</div>
+            <p class="column-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="column-1-3">
+            <h2 class="column-title">Мало туристов</h2>
+            <div class="column-subtitle">- №5 -</div>
+            <p class="column-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="incentive">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          </div>
+          <div class="search-form">
+            <div class="form-title">
+              <a href="#">Поиск гостиницы в Седоне</a>
+            </div>
+            <form action="#" method="post">
+              <label for="arrival-field">Дата заезда:</label>
+              <input type="date" name="arrival" id="arrival-field">
+              <label for="departure-field">Дата выезда:</label>
+              <input type="date" name="departure" id="departure-field">
+              <label for="adult-field">Взрослые:</label>
+              <input type="number" name="adult" id="adult-field">
+              <label for="kids-field">Дети:</label>
+              <input type="number" name="kids" id="kids-field">
+              <button class="btn" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
+        <div class="map">
+          <img src="http://placehold.it/1200x475" alt="Карта местности" width="1200" height="475">
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="column-1-3">
+        <section class="hash">
+          <a href="#">#visitsedona</a>
+        </section>
+      </div>
+      <div class="column-1-3">
+        <section class="socials">
+          <a href="#" class="socials-twitter">twitter</a>
+          <a href="#" class="socials-fb">facebook</a>
+          <a href="#" class="socials-youtube">youtube</a>
+        </section>
+      </div>
+      <div class="column-1-3">
+        <section class="copyright">
+          <p>Website by</p>
+          <a href="#">
+            <img src="http://placehold.it/115x40" alt="Логотип разработчика" width="115" height="40">
+          </a>
+        </section>
+      </div>
+    </footer>
 
   </body>
 </html>
