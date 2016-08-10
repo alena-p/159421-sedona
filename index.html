@@ -7,27 +7,25 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="logo">
-        <img src="http://placehold.it/138x70" alt="Седона логотип" width="138" height="70" >
+      <div class="main-header-logo">
+        <img class="main-header-logo__image"src="http://placehold.it/138x70" alt="Седона логотип" width="138" height="70" >
       </div>
       <nav class="main-navigation">
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта шатата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Информация</a></li>
+          <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Фото и видео</a></li>
+          <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Карта шатата</a></li>
+          <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="main-content">
       <section class="promo">
-        <div class="promo-image">
-          <img src="http://placehold.it/460x355" alt="Добро пожаловать на сайт города Седона" width="460" height="355">
-        </div>
-        <div class="promo-text">
-          <strong class="promo-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <img class="promo__image" src="http://placehold.it/460x355" alt="Добро пожаловать на сайт города Седона" width="460" height="355">
+        <div class="promo-block">
+          <strong class="promo-block__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
+          <p class="promo-block__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
       </section>
 
@@ -36,32 +34,29 @@
             <img class="advantage__image advantage__image_to-right" src="http://placehold.it/800x255" alt="Отель в Седоне" width="800" height="255">
             <figcaption class="advantage-info">
               <div class="advantage-description">
-                <strong class="advantage-description__title">Настоящий городок</strong>
+                <b class="advantage-description__title">Настоящий городок</b>
                 <span class="advantage-description__subtitle">- №1 -</span>
-                <p class="advantage-description__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                <strong class="advantage-description__text">Седона - не аттракцион для туристов, там течет своя жизнь</strong>
               </div>
             </figcaption>
         </figure>
         <div class="advantages-list">
           <div class="advantage-item">
             <div class="advantage-description">
-              <img class="advantage-description__icon" src="http://placehold.it/76x73" alt="Иконка жилье" width="76" height="73">
-              <strong class="advantage-description__title">Жилье</strong>
-              <p class="advantage-description__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <b class="advantage-description__title">Жилье</b>
+              <strong class="advantage-description__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</strong>
             </div>
           </div>
           <div class="advantage-item">
             <div class="advantage-description">
-              <img class="advantage-description__icon" src="http://placehold.it/76x72" alt="Иконка еда" width="76" height="72">
-              <strong class="advantage-description__title">Еда</strong>
-              <p class="advantage-description__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <b class="advantage-description__title">Еда</b>
+              <strong class="advantage-description__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</strong>
             </div>
           </div>
           <div class="advantage-item">
             <div class="advantage-description">
-              <img class="advantage-description__icon" src="http://placehold.it/65x77" alt="Иконка сувениры" width="65" height="77">
-              <strong class="advantage-description__title">Сувениры</strong>
-              <p class="advantage-description__text">Не только китайского, но и местного производства!</p>
+              <b class="advantage-description__title">Сувениры</b>
+              <strong class="advantage-description__text">Не только китайского, но и местного производства!</strong>
             </div>
           </div>
         </div>
@@ -69,84 +64,74 @@
             <img class="advantage__image advantage__image_to-left" src="http://placehold.it/800x255" alt="Мост Дьявола в Седоне" width="800" height="255">
             <figcaption class="advantage-info">
               <div class="advantage-description">
-                <strong class="advantage-description__title">Там есть мост дьявола</h2>
+                <b class="advantage-description__title">Там есть мост дьявола</b>
                 <span class="advantage-description__subtitle">- №2 -</span>
-                <p class="advantage-description__text">Да, по нему можно пройти! Если конечно осмелитесь</p>
+                <strong class="advantage-description__text">Да, по нему можно пройти! Если конечно осмелитесь</strong>
               </div>
             </figcaption>
         </figure>
-        <div class="advantages-list">
+        <div class="advantages-list advantages-list_colour-bg">
           <div class="advantage-item">
             <div class="advantage-description">
-              <h2 class="column-title">Небольшая площадь</h2>
-              <span class="column-subtitle">- №3 -</span>
-              <p class="column-text">Все достопримечательности находятся очень близко</p>
+              <b class="advantage-description__title">Небольшая площадь</b>
+              <span class="advantage-description__subtitle">- №3 -</span>
+              <strong class="advantage-description__text">Все достопримечательности находятся очень близко</strong>
             </div>
           </div>
           <div class="advantage-item">
             <div class="advantage-description">
-              <h2 class="column-title">Красивая дорога</h2>
-              <span class="column-subtitle">- №4 -</span>
-              <p class="column-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <b class="advantage-description__title">Красивая дорога</b>
+              <span class="advantage-description__subtitle">- №4 -</span>
+              <strong class="advantage-description__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</strong>
             </div>
           </div>
           <div class="advantage-item">
             <div class="advantage-description">
-              <h2 class="column-title">Мало туристов</h2>
-              <span class="column-subtitle">- №5 -</span>
-              <p class="column-text">Большинство едет в Гранд Каньон и толпится там</p>
+              <b class="advantage-description__title">Мало туристов</b>
+              <span class="advantage-description__subtitle">- №5 -</span>
+              <strong class="advantage-description__text">Большинство едет в Гранд Каньон и толпится там</strong>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="incentive">
-            <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          </div>
-          <div class="search-form">
-            <div class="form-title">
-              <a href="#">Поиск гостиницы в Седоне</a>
+        <div class="incentive">
+          <h2 class="incentive__title">Заинтересовались?</h2>
+          <p class="incentive__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="search-block">
+            <div class="search-block__title">
+              <a class="search-block__link" href="#">Поиск гостиницы в Седоне</a>
             </div>
-            <form action="#" method="post">
-              <label for="arrival-field">Дата заезда:</label>
-              <input type="date" name="arrival" id="arrival-field">
-              <label for="departure-field">Дата выезда:</label>
-              <input type="date" name="departure" id="departure-field">
-              <label for="adult-field">Взрослые:</label>
-              <input type="number" name="adult" id="adult-field">
-              <label for="kids-field">Дети:</label>
-              <input type="number" name="kids" id="kids-field">
-              <button type="submit">Найти</button>
+            <form class="search-form" action="#" method="post">
+              <label class="search-form__label search-form__date" for="arrival-field">Дата заезда:</label>
+              <input class="search-form__input" type="date" name="arrival" id="arrival-field">
+              <label class="search-form__label search-form__date" for="departure-field">Дата выезда:</label>
+              <input class="search-form__input" type="date" name="departure" id="departure-field">
+              <label class="search-form__label search-form__age-bracket" for="adult-field">Взрослые:</label>
+              <input class="search-form__input" type="number" name="adult" id="adult-field">
+              <label class="search-form__label search-form__age-bracket" for="kids-field">Дети:</label>
+              <input class="search-form__input" type="number" name="kids" id="kids-field">
+              <button class="search-form__button" type="submit">Найти</button>
             </form>
           </div>
         </div>
         <div class="map">
-          <img src="http://placehold.it/1200x475" alt="Карта местности" width="1200" height="475">
+          <img class="map__image" src="http://placehold.it/1200x475" alt="Карта местности" width="1200" height="475">
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <div class="column-1-3">
-        <section class="hash">
-          <a href="#">#visitsedona</a>
-        </section>
-      </div>
-      <div class="column-1-3">
-        <section class="socials">
-          <a href="#" class="socials-twitter">twitter</a>
-          <a href="#" class="socials-fb">facebook</a>
-          <a href="#" class="socials-youtube">youtube</a>
-        </section>
-      </div>
-      <div class="column-1-3">
-        <section class="copyright">
-          <p>Website by</p>
-          <a href="#">
-            <img src="http://placehold.it/115x40" alt="Логотип разработчика" width="115" height="40">
-          </a>
-        </section>
-      </div>
+      <section class="main-footer__block hash">
+        <a class="hash__link" href="#">#visitsedona</a>
+      </section>
+      <section class="main-footer__block socials">
+        <a class="socials__link socials__link_twitter" href="#" class="socials-twitter">twitter</a>
+        <a class="socials__link socials__link_fb" href="#" class="socials-fb">facebook</a>
+        <a class="socials__link socials__link_youtube" href="#" class="socials-youtube">youtube</a>
+      </section>
+      <section class="main-footer__block copyright">
+        <span class="copyright__name">Website by</span>
+        <a class="copyright__link" href="#"><img class="copyright__image" src="http://placehold.it/115x40" alt="Логотип Htmlacademy" width="115" height="40"></a>
+      </section>
     </footer>
 
   </body>
