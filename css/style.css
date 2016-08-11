@@ -1,0 +1,19 @@
+body {
+  font-size: 100%;
+  line-height: 1;
+  color: #000000;
+  font-weight: normal;
+  font-family: 'PT Sans Regular', Arial, Helvetica, sans-serif;
+}
+
+.advantage-description__title {
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.advantage-description__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+}
