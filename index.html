@@ -8,7 +8,7 @@
   <body>
     <header class="main-header">
       <div class="header-logo">
-        <img class="header-logo__image"src="img/logo.png" alt="Седона логотип" width="138" height="70" >
+        <img class="header-logo__image" src="img/logo.png" alt="Седона логотип" width="138" height="70" >
       </div>
       <nav class="main-navigation">
         <ul class="main-navigation__list">
@@ -22,10 +22,8 @@
 
     <main class="main-content">
       <section class="promo">
-        <div class="promo__wrapper promo__wrapper_mask">
-          <img class="promo__image" src="img/greeting.png" alt="Добро пожаловать на сайт города Седона" width="458" height="352">
-        <div>
-        <div class="promo__wrapper">
+        <img class="promo__image" src="img/greeting.png" alt="Добро пожаловать на сайт города Седона" width="458" height="352">
+        <div class="promo__mask">
           <strong class="promo__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
           <p class="promo__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
@@ -38,7 +36,7 @@
               <div class="advantage__description">
                 <b class="advantage__title">Настоящий городок</b>
                 <span class="advantage__subtitle">- №1 -</span>
-                <strong class="advantage__text">Седона - не аттракцион для туристов, там течет своя жизнь</strong>
+                <p class="advantage__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
               </div>
             </figcaption>
         </figure>
@@ -46,19 +44,19 @@
           <div class="advantage-item">
             <div class="advantage-item__description">
               <b class="advantage-item__title">Жилье</b>
-              <strong class="advantage-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</strong>
+              <p class="advantage-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__description">
               <b class="advantage-item__title">Еда</b>
-              <strong class="advantage-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</strong>
+              <p class="advantage-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__description">
               <b class="advantage-item__title">Сувениры</b>
-              <strong class="advantage-item__text">Не только китайского, но и местного производства!</strong>
+              <p class="advantage-item__text">Не только китайского, но и местного производства!</p>
             </div>
           </div>
         </div>
@@ -68,7 +66,7 @@
               <div class="advantage__description">
                 <b class="advantage__title ">Там есть мост дьявола</b>
                 <span class="advantage__subtitle">- №2 -</span>
-                <strong class="advantage__text">Да, по нему можно пройти! Если конечно осмелитесь</strong>
+                <p class="advantage__text">Да, по нему можно пройти! Если конечно осмелитесь</p>
               </div>
             </figcaption>
         </figure>
@@ -77,21 +75,21 @@
             <div class="advantage-item__description">
               <b class="advantage-item__title">Небольшая площадь</b>
               <span class="advantage-item__subtitle">- №3 -</span>
-              <strong class="advantage-item__text">Все достопримечательности находятся очень близко</strong>
+              <p class="advantage-item__text">Все достопримечательности находятся очень близко</p>
             </div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__description">
               <b class="advantage-item__title">Красивая дорога</b>
               <span class="advantage-item__subtitle">- №4 -</span>
-              <strong class="advantage-item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</strong>
+              <p class="advantage-item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </div>
           <div class="advantage-item">
             <div class="advantage-item__description">
               <b class="advantage-item__title">Мало туристов</b>
               <span class="advantage-item__subtitle">- №5 -</span>
-              <strong class="advantage-item__text">Большинство едет в Гранд Каньон и толпится там</strong>
+              <p class="advantage-item__text">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </div>
         </div>
@@ -103,10 +101,10 @@
               <a class="search__form-open" href="#">Поиск гостиницы в Седоне</a>
             </div>
             <form class="search-form" action="#" method="post">
-              <label class="search-form__label" for="arrival-field">Дата заезда: <span search-form__date>Иконка календаря</span></label>
-              <input class="search-form__input" type="date" name="arrival" id="arrival-field">
-              <label class="search-form__label" for="departure-field">Дата выезда: <span search-form__date>Иконка календаря</span></label>
-              <input class="search-form__input" type="date" name="departure" id="departure-field">
+              <label class="search-form__label" for="arrival-field">Дата заезда: <span class="search-form__date">Иконка календаря</span></label>
+              <input class="search-form__input" type="text" name="arrival" id="arrival-field">
+              <label class="search-form__label" for="departure-field">Дата выезда: <span class="search-form__date">Иконка календаря</span></label>
+              <input class="search-form__input" type="text" name="departure" id="departure-field">
               <label class="search-form__label search-form__age-bracket" for="adult-field">Взрослые:</label>
               <input class="search-form__input" type="text" name="adult" id="adult-field">
               <label class="search-form__label search-form__age-bracket" for="kids-field">Дети:</label>
@@ -122,15 +120,15 @@
     </main>
 
     <footer class="main-footer">
-      <section class="main-footer__block hash">
+      <section class="hash">
         <a class="hash__link" href="#">#visitsedona</a>
       </section>
-      <section class="main-footer__block socials">
+      <section class="socials">
         <a class="socials__link" href="#">twitter</a>
         <a class="socials__link" href="#">facebook</a>
         <a class="socials__link" href="#">youtube</a>
       </section>
-      <section class="main-footer__block copyright">
+      <section class="copyright">
         <span class="copyright__label">Website by</span>
         <a class="copyright__link" href="#"><img class="copyright__image" src="img/htmlacademy-logo.png" alt="Логотип Htmlacademy" width="113" height="39"></a>
       </section>
