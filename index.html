@@ -7,112 +7,114 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header-logo">
-        <img class="main-header-logo__image"src="img/logo.png" alt="Седона логотип" width="138" height="70" >
+      <div class="header-logo">
+        <img class="header-logo__image"src="img/logo.png" alt="Седона логотип" width="138" height="70" >
       </div>
       <nav class="main-navigation">
-        <ul class="main-navigation-list">
-          <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Информация</a></li>
-          <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Фото и видео</a></li>
-          <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Карта шатата</a></li>
-          <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Гостиницы</a></li>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a class="main-navigation__link" href="#">Информация</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="#">Фото и видео</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="#">Карта шатата</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="main-content">
       <section class="promo">
-        <img class="promo__image" src="img/greeting.png" alt="Добро пожаловать на сайт города Седона" width="458" height="352">
-        <div class="promo-block">
-          <strong class="promo-block__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
-          <p class="promo-block__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="promo__wrapper promo__wrapper_mask">
+          <img class="promo__image" src="img/greeting.png" alt="Добро пожаловать на сайт города Седона" width="458" height="352">
+        <div>
+        <div class="promo__wrapper">
+          <strong class="promo__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
+          <p class="promo__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
       </section>
 
       <section class="index-content">
         <figure class="advantage">
-            <img class="advantage__image advantage__image_to-right" src="img/city.jpg" alt="Отель в Седоне" width="800" height="255">
-            <figcaption class="advantage-info">
-              <div class="advantage-description">
-                <b class="advantage-description__title">Настоящий городок</b>
-                <span class="advantage-description__subtitle">- №1 -</span>
-                <strong class="advantage-description__text">Седона - не аттракцион для туристов, там течет своя жизнь</strong>
+            <img class="advantage__image advantage__image_right" src="img/city.jpg" alt="Отель в Седоне" width="800" height="255">
+            <figcaption class="advantage__info">
+              <div class="advantage__description">
+                <b class="advantage__title">Настоящий городок</b>
+                <span class="advantage__subtitle">- №1 -</span>
+                <strong class="advantage__text">Седона - не аттракцион для туристов, там течет своя жизнь</strong>
               </div>
             </figcaption>
         </figure>
         <div class="advantages-list">
           <div class="advantage-item">
-            <div class="advantage-description">
-              <b class="advantage-description__title">Жилье</b>
-              <strong class="advantage-description__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</strong>
+            <div class="advantage-item__description">
+              <b class="advantage-item__title">Жилье</b>
+              <strong class="advantage-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</strong>
             </div>
           </div>
           <div class="advantage-item">
-            <div class="advantage-description">
-              <b class="advantage-description__title">Еда</b>
-              <strong class="advantage-description__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</strong>
+            <div class="advantage-item__description">
+              <b class="advantage-item__title">Еда</b>
+              <strong class="advantage-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</strong>
             </div>
           </div>
           <div class="advantage-item">
-            <div class="advantage-description">
-              <b class="advantage-description__title">Сувениры</b>
-              <strong class="advantage-description__text">Не только китайского, но и местного производства!</strong>
+            <div class="advantage-item__description">
+              <b class="advantage-item__title">Сувениры</b>
+              <strong class="advantage-item__text">Не только китайского, но и местного производства!</strong>
             </div>
           </div>
         </div>
         <figure class="advantage">
-            <img class="advantage__image advantage__image_to-left" src="img/devil-bridge.jpg" alt="Мост Дьявола в Седоне" width="800" height="255">
-            <figcaption class="advantage-info">
-              <div class="advantage-description">
-                <b class="advantage-description__title ">Там есть мост дьявола</b>
-                <span class="advantage-description__subtitle">- №2 -</span>
-                <strong class="advantage-description__text">Да, по нему можно пройти! Если конечно осмелитесь</strong>
+            <img class="advantage__image" src="img/devil-bridge.jpg" alt="Мост Дьявола в Седоне" width="800" height="255">
+            <figcaption class="advantage__info">
+              <div class="advantage__description">
+                <b class="advantage__title ">Там есть мост дьявола</b>
+                <span class="advantage__subtitle">- №2 -</span>
+                <strong class="advantage__text">Да, по нему можно пройти! Если конечно осмелитесь</strong>
               </div>
             </figcaption>
         </figure>
-        <div class="advantages-list advantages-list_colour-bg">
+        <div class="advantages-list advantages-list_color-bg">
           <div class="advantage-item">
-            <div class="advantage-description">
-              <b class="advantage-description__title">Небольшая площадь</b>
-              <span class="advantage-description__subtitle">- №3 -</span>
-              <strong class="advantage-description__text">Все достопримечательности находятся очень близко</strong>
+            <div class="advantage-item__description">
+              <b class="advantage-item__title">Небольшая площадь</b>
+              <span class="advantage-item__subtitle">- №3 -</span>
+              <strong class="advantage-item__text">Все достопримечательности находятся очень близко</strong>
             </div>
           </div>
           <div class="advantage-item">
-            <div class="advantage-description">
-              <b class="advantage-description__title">Красивая дорога</b>
-              <span class="advantage-description__subtitle">- №4 -</span>
-              <strong class="advantage-description__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</strong>
+            <div class="advantage-item__description">
+              <b class="advantage-item__title">Красивая дорога</b>
+              <span class="advantage-item__subtitle">- №4 -</span>
+              <strong class="advantage-item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</strong>
             </div>
           </div>
           <div class="advantage-item">
-            <div class="advantage-description">
-              <b class="advantage-description__title">Мало туристов</b>
-              <span class="advantage-description__subtitle">- №5 -</span>
-              <strong class="advantage-description__text">Большинство едет в Гранд Каньон и толпится там</strong>
+            <div class="advantage-item__description">
+              <b class="advantage-item__title">Мало туристов</b>
+              <span class="advantage-item__subtitle">- №5 -</span>
+              <strong class="advantage-item__text">Большинство едет в Гранд Каньон и толпится там</strong>
             </div>
           </div>
         </div>
-        <div class="incentive">
+        <section class="incentive">
           <h2 class="incentive__title">Заинтересовались?</h2>
           <p class="incentive__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <div class="search-block">
-            <div class="search-block__title">
-              <a class="search-block__link" href="#">Поиск гостиницы в Седоне</a>
+          <div class="search">
+            <div class="search__title">
+              <a class="search__form-open" href="#">Поиск гостиницы в Седоне</a>
             </div>
             <form class="search-form" action="#" method="post">
-              <label class="search-form__label search-form__date" for="arrival-field">Дата заезда:</label>
+              <label class="search-form__label" for="arrival-field">Дата заезда: <span search-form__date>Иконка календаря</span></label>
               <input class="search-form__input" type="date" name="arrival" id="arrival-field">
-              <label class="search-form__label search-form__date" for="departure-field">Дата выезда:</label>
+              <label class="search-form__label" for="departure-field">Дата выезда: <span search-form__date>Иконка календаря</span></label>
               <input class="search-form__input" type="date" name="departure" id="departure-field">
               <label class="search-form__label search-form__age-bracket" for="adult-field">Взрослые:</label>
-              <input class="search-form__input" type="number" name="adult" id="adult-field">
+              <input class="search-form__input" type="text" name="adult" id="adult-field">
               <label class="search-form__label search-form__age-bracket" for="kids-field">Дети:</label>
-              <input class="search-form__input" type="number" name="kids" id="kids-field">
+              <input class="search-form__input" type="text" name="kids" id="kids-field">
               <button class="search-form__button" type="submit">Найти</button>
             </form>
           </div>
-        </div>
+        </section>
         <div class="map">
           <img class="map__image" src="img/map.jpg" alt="Карта местности" width="1200" height="593">
         </div>
@@ -124,12 +126,12 @@
         <a class="hash__link" href="#">#visitsedona</a>
       </section>
       <section class="main-footer__block socials">
-        <a class="socials__link socials__link_twitter" href="#" class="socials-twitter">twitter</a>
-        <a class="socials__link socials__link_fb" href="#" class="socials-fb">facebook</a>
-        <a class="socials__link socials__link_youtube" href="#" class="socials-youtube">youtube</a>
+        <a class="socials__link" href="#">twitter</a>
+        <a class="socials__link" href="#">facebook</a>
+        <a class="socials__link" href="#">youtube</a>
       </section>
       <section class="main-footer__block copyright">
-        <span class="copyright__name">Website by</span>
+        <span class="copyright__label">Website by</span>
         <a class="copyright__link" href="#"><img class="copyright__image" src="img/htmlacademy-logo.png" alt="Логотип Htmlacademy" width="113" height="39"></a>
       </section>
     </footer>
