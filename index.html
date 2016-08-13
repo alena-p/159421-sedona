@@ -22,7 +22,7 @@
 
     <main class="main-content">
       <section class="promo">
-        <img class="promo__image" src="img/greeting.png" alt="Добро пожаловать на сайт города Седона" width="458" height="352">
+        <img class="promo__image" src="img/greeting.jpg" alt="Добро пожаловать на сайт города Седона" width="1200" height="773">
         <div class="promo__mask">
           <strong class="promo__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
           <p class="promo__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -101,14 +101,28 @@
               <a class="search__form-open" href="#">Поиск гостиницы в Седоне</a>
             </div>
             <form class="search-form" action="#" method="post">
-              <label class="search-form__label" for="arrival-field">Дата заезда: <span class="search-form__date">Иконка календаря</span></label>
-              <input class="search-form__input" type="text" name="arrival" id="arrival-field">
-              <label class="search-form__label" for="departure-field">Дата выезда: <span class="search-form__date">Иконка календаря</span></label>
-              <input class="search-form__input" type="text" name="departure" id="departure-field">
-              <label class="search-form__label search-form__age-bracket" for="adult-field">Взрослые:</label>
-              <input class="search-form__input" type="text" name="adult" id="adult-field">
-              <label class="search-form__label search-form__age-bracket" for="kids-field">Дети:</label>
-              <input class="search-form__input" type="text" name="kids" id="kids-field">
+              <label class="search-form__label" for="arrival-field">Дата заезда:</label>
+              <div class="search-form__input-group">
+                <input class="search-form__input" type="text" name="arrival" id="arrival-field">
+                <span class="search-form__calendar-icon">Иконка календаря</span>
+              </div>
+              <label class="search-form__label" for="departure-field">Дата выезда:</label>
+              <div class="search-form__input-group">
+                <input class="search-form__input" type="text" name="departure" id="departure-field">
+                <span class="search-form__calendar-icon">Иконка календаря</span>
+              </div>
+              <label class="search-form__label" for="adult-field">Взрослые:</label>
+              <div class="search-form__input-group search-form__input-group_age">
+                <span class="search-form__decrease-value">-</span>
+                <input class="search-form__input" type="text" name="adult" id="adult-field">
+                <span class="search-form__increase-value">+</span>
+              </div>
+              <label class="search-form__label" for="kids-field">Дети:</label>
+              <div class="search-form__input-group search-form__input-group_age">
+                <span class="search-form__decrease-value">-</span>
+                <input class="search-form__input" type="text" name="kids" id="kids-field">
+                <span class="search-form__increase-value">+</span>
+              </div>
               <button class="search-form__button" type="submit">Найти</button>
             </form>
           </div>
