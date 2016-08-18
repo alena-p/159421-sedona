@@ -140,6 +140,7 @@ body {
 .hotels-filter__group {
   width: 240px;
   float: left;
+  margin-right: 15px;
 }
 
 .hotels-filter__price {
