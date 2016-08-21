@@ -122,7 +122,6 @@ body {
 }
 
 .promo__mask {
-  min-height: 100px;
   padding-top: 117px;
   padding-bottom: 50px;
   padding-left: 6%;
@@ -279,7 +278,6 @@ body {
   padding-top: 55px;
   padding-left: 6%;
   padding-right: 6%;
-  /*min-height: 290px;*/
   text-align: center;
 }
 
@@ -415,7 +413,6 @@ body {
 
 /*footer*/
 .main-footer {
-  min-height: 46px;
   padding-top: 37px;
   padding-bottom: 37px;
   position: relative;
@@ -488,7 +485,6 @@ body {
 
 /*Hotels*/
 .hotels-filter {
-  min-height: 162px;
   padding-left: 6%;
   padding-right: 6%;
   padding-top: 25px;
