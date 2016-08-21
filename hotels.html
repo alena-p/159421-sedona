@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Седона отели</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -27,9 +28,9 @@
           <form class="hotels-filter__form" action="#" method="post">
             <fieldset class="hotels-filter__group">
               <legend class="hotels-filter__title">Инфраструктура:</legend>
-              <input class="hotels-filter__input" type="checkbox" name="pool" id="pool-field">
+              <input class="hotels-filter__input" type="checkbox" name="pool" id="pool-field" disabled checked>
               <label class="hotels-filter__label" for="pool-field">Бассейн</label>
-              <input class="hotels-filter__input" type="checkbox" name="parking" id="parking-field">
+              <input class="hotels-filter__input" type="checkbox" name="parking" id="parking-field" disabled>
               <label class="hotels-filter__label" for="parking-field">Парковка</label>
               <input class="hotels-filter__input" type="checkbox" name="internet" id="internet-field">
               <label class="hotels-filter__label" for="internet-field">Wi-Fi</label>
@@ -41,7 +42,7 @@
               <input class="hotels-filter__input" type="checkbox" name="motel" id="motel-field">
               <label class="hotels-filter__label" for="motel-field">Мотель</label>
               <input class="hotels-filter__input" type="checkbox" name="apartments" id="apartments-field">
-              <label class="hotels-filter__label" for="apartments-field">Аппартаменты</label>
+              <label class="hotels-filter__label" for="apartments-field">Апартаменты</label>
             </fieldset>
             <fieldset class="hotels-filter__price">
               <legend class="hotels-filter__title">Стоимость в&nbsp;сутки (р):</legend>
@@ -49,11 +50,11 @@
                 <label class="slider__label" for="price-min-field">От</label>
                 <input class="slider__input" type="text" name="price-min" id="price-min-field">
                 <label class="slider__label" for="price-max-field">До</label>
-                <input class="slidere__input" type="text" name="price-max" id="price-max-field">
-                <div class="slider__controls">
-                  <div class="slider__control-min"></div>
-                  <div class="slider__control-max"></div>
-                </div>
+                <input class="slider__input" type="text" name="price-max" id="price-max-field">
+              </div>
+              <div class="slider__controls">
+                <div class="slider__control-min"></div>
+                <div class="slider__control-max"></div>
               </div>
               <button class="hotels-filter__button" type="submit">Показать</button>
             </fieldset>
@@ -125,9 +126,9 @@
           <a class="hash__link" href="#" target="_blank">#visitsedona</a>
         </section>
         <section class="socials">
-          <a class="socials__link" href="#" target="_blank">twitter</a>
-          <a class="socials__link" href="#" target="_blank">facebook</a>
-          <a class="socials__link" href="#" target="_blank">youtube</a>
+          <a class="socials__link icon-twitter" href="#" target="_blank"></a>
+          <a class="socials__link icon-facebook" href="#" target="_blank"></a>
+          <a class="socials__link icon-youtube" href="#" target="_blank"></a>
         </section>
         <section class="copyright">
           <span class="copyright__label">Website by</span>
