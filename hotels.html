@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Седона отели</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <header class="main-header">
         <div class="header-logo">
-          <a class="header-logo__link" href="/"><img class="header-logo__image" src="img/logo.png" alt="Седона логотип" width="138" height="70" ></a>
+          <a class="header-logo__link" href="index.html"><img class="header-logo__image" src="img/logo.png" alt="Седона логотип" width="138" height="70" ></a>
         </div>
         <nav class="main-navigation">
           <ul class="main-navigation__list">
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Информация</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Фото и&nbsp;видео</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Карта шатата</a></li>
-            <li class="main-navigation__item"><a class="main-navigation__link" href="#">Гостиницы</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link main-navigation__link_active">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -27,9 +28,9 @@
           <form class="hotels-filter__form" action="#" method="post">
             <fieldset class="hotels-filter__group">
               <legend class="hotels-filter__title">Инфраструктура:</legend>
-              <input class="hotels-filter__input" type="checkbox" name="pool" id="pool-field">
+              <input class="hotels-filter__input" type="checkbox" name="pool" id="pool-field" disabled checked>
               <label class="hotels-filter__label" for="pool-field">Бассейн</label>
-              <input class="hotels-filter__input" type="checkbox" name="parking" id="parking-field">
+              <input class="hotels-filter__input" type="checkbox" name="parking" id="parking-field" disabled>
               <label class="hotels-filter__label" for="parking-field">Парковка</label>
               <input class="hotels-filter__input" type="checkbox" name="internet" id="internet-field">
               <label class="hotels-filter__label" for="internet-field">Wi-Fi</label>
@@ -41,7 +42,7 @@
               <input class="hotels-filter__input" type="checkbox" name="motel" id="motel-field">
               <label class="hotels-filter__label" for="motel-field">Мотель</label>
               <input class="hotels-filter__input" type="checkbox" name="apartments" id="apartments-field">
-              <label class="hotels-filter__label" for="apartments-field">Аппартаменты</label>
+              <label class="hotels-filter__label" for="apartments-field">Апартаменты</label>
             </fieldset>
             <fieldset class="hotels-filter__price">
               <legend class="hotels-filter__title">Стоимость в&nbsp;сутки (р):</legend>
@@ -49,11 +50,11 @@
                 <label class="slider__label" for="price-min-field">От</label>
                 <input class="slider__input" type="text" name="price-min" id="price-min-field">
                 <label class="slider__label" for="price-max-field">До</label>
-                <input class="slidere__input" type="text" name="price-max" id="price-max-field">
-                <div class="slider__controls">
-                  <div class="slider__control-min"></div>
-                  <div class="slider__control-max"></div>
-                </div>
+                <input class="slider__input" type="text" name="price-max" id="price-max-field">
+              </div>
+              <div class="slider__controls">
+                <div class="slider__control-min"></div>
+                <div class="slider__control-max"></div>
               </div>
               <button class="hotels-filter__button" type="submit">Показать</button>
             </fieldset>
@@ -70,50 +71,74 @@
                 <a href="#" class="sorting__control sorting__control_by-raiting">По рейтингу</a>
               </div>
               <div class="sorting__direction">
-                <span class="sorting__control sorting__control_ascending sorting__control_active">&uarr;</span>
-                <a href="#" class="sorting__control sorting__control_descending">&darr;</a>
+                <a href="#" class="sorting__control sorting__control_ascending"></a>
+                <span class="sorting__control sorting__control_descending sorting__control_active"></span>
               </div>
             </div>
           </header>
-          <article class="hotel">
+          <article class="hotel clearfix">
             <img class="hotel__image" src="img/amara.jpg" alt="Фото гостиницы Amara Resort & Spa" width="135" height="90">
             <div class="hotel__info">
-              <h3 class="hotel__name">Amara Resort & Spa</h3>
-              <span class="hotel__type">Гостиница</span>
-              <span class="hotel__price">от 3500 р.</span>
-              <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
-              <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              <h3 class="hotel__name"><a class="hotel__link" href="#">Amara Resort & Spa</a></h3>
+              <div class="hotel__info-group">
+                <span class="hotel__type">Гостиница</span>
+                <span class="hotel__price">от 3500 р.</span>
+              </div>
+              <div class="hotel__button-group">
+                <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
+                <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="hotel__rating-block">
-              <div class="hotel__rating-stars">Иконочный шрифт</div>
+              <div class="hotel__rating-stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
               <span class="hotel__rating-average">Рейтинг: 8,5</span>
             </div>
           </article>
-          <article class="hotel">
+          <article class="hotel clearfix">
             <img class="hotel__image" src="img/desert.jpg" alt="Фото мотеля Desert Quail Inn" width="135" height="90">
             <div class="hotel__info">
-              <h3 class="hotel__name">Desert Quail Inn</h3>
-              <span class="hotel__type">Мотель</span>
-              <span class="hotel__price">от 2000 р.</span>
-              <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
-              <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              <h3 class="hotel__name"><a class="hotel__link" href="#">Desert Quail Inn</a></h3>
+              <div class="hotel__info-group">
+                <span class="hotel__type">Мотель</span>
+                <span class="hotel__price">от 2000 р.</span>
+              </div>
+              <div class="hotel__button-group">
+                <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
+                <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="hotel__rating-block">
-              <div class="hotel__rating-stars">Иконочный шрифт</div>
+              <div class="hotel__rating-stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
               <span class="hotel__rating-average">Рейтинг: 8,9</span>
             </div>
           </article>
-          <article class="hotel">
+          <article class="hotel clearfix">
             <img class="hotel__image" src="img/villas.jpg" alt="Фото аппартаментов Villas at Poco Diablo" width="135" height="90">
             <div class="hotel__info">
-              <h3 class="hotel__name">Villas at Poco Diablo</h3>
-              <span class="hotel__type">Аппартаменты</span>
-              <span class="hotel__price">от 4000 р.</span>
-              <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
-              <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              <h3 class="hotel__name"><a class="hotel__link" href="#">Villas at Poco Diablo</a></h3>
+              <div class="hotel__info-group">
+                <span class="hotel__type">Апартаменты</span>
+                <span class="hotel__price">от 4000 р.</span>
+              </div>
+              <div class="hotel__button-group">
+                <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
+                <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="hotel__rating-block">
-              <div class="hotel__rating-stars">Иконочный шрифт</div>
+              <div class="hotel__rating-stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
               <span class="hotel__rating-average">Рейтинг: 9,2</span>
             </div>
           </article>
@@ -125,9 +150,9 @@
           <a class="hash__link" href="#" target="_blank">#visitsedona</a>
         </section>
         <section class="socials">
-          <a class="socials__link" href="#" target="_blank">twitter</a>
-          <a class="socials__link" href="#" target="_blank">facebook</a>
-          <a class="socials__link" href="#" target="_blank">youtube</a>
+          <a class="socials__link icon-twitter" href="#" target="_blank"></a>
+          <a class="socials__link icon-facebook" href="#" target="_blank"></a>
+          <a class="socials__link icon-youtube" href="#" target="_blank"></a>
         </section>
         <section class="copyright">
           <span class="copyright__label">Website by</span>

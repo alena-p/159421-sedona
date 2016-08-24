@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Седона главная</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -17,16 +18,16 @@
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Информация</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Фото и&nbsp;видео</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Карта шатата</a></li>
-            <li class="main-navigation__item"><a class="main-navigation__link" href="#">Гостиницы</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
 
       <main class="main-content">
         <section class="promo">
-          <img class="promo__image" src="img/greeting.jpg" alt="Добро пожаловать на сайт города Седона" width="1200" height="773">
+          <img class="promo__image" src="img/greeting.jpg" alt="Добро пожаловать на сайт города Седона" width="1200" height="508">
           <div class="promo__mask">
-            <strong class="promo__title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</strong>
+            <strong class="promo__title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,<br> заслуживающий большего!</strong>
             <p class="promo__text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем Гранд Каньон!</p>
           </div>
         </section>
@@ -36,27 +37,27 @@
               <img class="advantage__image advantage__image_right" src="img/city.jpg" alt="Отель в Седоне" width="800" height="255">
               <figcaption class="advantage__info">
                 <div class="advantage__description">
-                  <b class="advantage__title">Настоящий городок</b>
-                  <span class="advantage__subtitle">- №1 -</span>
+                  <b class="advantage__title">Настоящий<br> городок</b>
+                  <span class="advantage__subtitle">&mdash; №1 &mdash;</span>
                   <p class="advantage__text">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
                 </div>
               </figcaption>
           </figure>
           <div class="advantages-list clearfix">
             <div class="advantage-item">
-              <div class="advantage-item__description">
+              <div class="advantage-item__description advantage-item__description_icon-house">
                 <b class="advantage-item__title">Жилье</b>
                 <p class="advantage-item__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
               </div>
             </div>
             <div class="advantage-item">
-              <div class="advantage-item__description">
+              <div class="advantage-item__description advantage-item__description_icon-food">
                 <b class="advantage-item__title">Еда</b>
                 <p class="advantage-item__text">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
               </div>
             </div>
             <div class="advantage-item">
-              <div class="advantage-item__description">
+              <div class="advantage-item__description advantage-item__description_icon-gift">
                 <b class="advantage-item__title">Сувениры</b>
                 <p class="advantage-item__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
               </div>
@@ -66,62 +67,66 @@
               <img class="advantage__image" src="img/devil-bridge.jpg" alt="Мост Дьявола в Седоне" width="800" height="255">
               <figcaption class="advantage__info advantage__info_right">
                 <div class="advantage__description">
-                  <b class="advantage__title ">Там есть мост дьявола</b>
-                  <span class="advantage__subtitle">- №2 -</span>
+                  <b class="advantage__title ">Там есть<br> мост дьявола</b>
+                  <span class="advantage__subtitle">&mdash; №2 &mdash;</span>
                   <p class="advantage__text">Да, по&nbsp;нему можно пройти! Если конечно осмелитесь</p>
                 </div>
               </figcaption>
           </figure>
-          <div class="advantages-list advantages-list_color-bg">
+          <div class="advantages-list clearfix advantages-list_color-bg">
             <div class="advantage-item">
               <div class="advantage-item__description">
-                <b class="advantage-item__title">Небольшая площадь</b>
-                <span class="advantage-item__subtitle">- №3 -</span>
+                <b class="advantage-item__title">Небольшая<br> площадь</b>
+                <span class="advantage-item__subtitle">&mdash; №3 &mdash;</span>
                 <p class="advantage-item__text">Все достопримечательности находятся очень близко</p>
               </div>
             </div>
             <div class="advantage-item">
               <div class="advantage-item__description">
-                <b class="advantage-item__title">Красивая дорога</b>
-                <span class="advantage-item__subtitle">- №4 -</span>
+                <b class="advantage-item__title">Красивая<br> дорога</b>
+                <span class="advantage-item__subtitle">&mdash; №4 &mdash;</span>
                 <p class="advantage-item__text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
               </div>
             </div>
             <div class="advantage-item">
               <div class="advantage-item__description">
-                <b class="advantage-item__title">Мало туристов</b>
-                <span class="advantage-item__subtitle">- №5 -</span>
+                <b class="advantage-item__title">Мало<br> туристов</b>
+                <span class="advantage-item__subtitle">&mdash; №5 &mdash;</span>
                 <p class="advantage-item__text">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
               </div>
             </div>
           </div>
           <section class="incentive">
             <h2 class="incentive__title">Заинтересовались?</h2>
-            <p class="incentive__text">Укажите предполагаемые даты поездки и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
+            <p class="incentive__text">Укажите предполагаемые даты поездки,<br> и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
             <div class="search">
               <a class="search__form-open" href="#">Поиск гостиницы в&nbsp;Седоне</a>
               <form class="search-form" action="#" method="post">
-                <label class="search-form__label" for="arrival-field">Дата заезда:</label>
-                <div class="search-form__input-group">
+                <div class="search-form__date-group clearfix">
+                  <label class="search-form__label" for="arrival-field">Дата заезда:</label>
                   <input class="search-form__input" type="text" name="arrival" id="arrival-field">
-                  <span class="search-form__calendar-icon">Иконка календаря</span>
+                  <span class="search-form__calendar-icon icon-calendar"></span>
                 </div>
-                <label class="search-form__label" for="departure-field">Дата выезда:</label>
-                <div class="search-form__input-group">
+                <div class="search-form__date-group clearfix">
+                  <label class="search-form__label" for="departure-field">Дата выезда:</label>
                   <input class="search-form__input" type="text" name="departure" id="departure-field">
-                  <span class="search-form__calendar-icon">Иконка календаря</span>
+                  <span class="search-form__calendar-icon icon-calendar"></span>
                 </div>
-                <label class="search-form__label" for="adult-field">Взрослые:</label>
-                <div class="search-form__input-group search-form__input-group_age">
-                  <button type="button" class="search-form__decrease-value">-</button>
-                  <input class="search-form__input" type="text" name="adult" id="adult-field">
-                  <button type="button" class="search-form__increase-value">+</button>
+                <div class="search-form__age-group">
+                  <label class="search-form__label" for="adult-field">Взрослые:</label>
+                  <div class="search-form__button-group">
+                    <button type="button" class="search-form__decrease-value icon-minus"></button>
+                    <input class="search-form__input" type="text" name="adult" id="adult-field">
+                    <button type="button" class="search-form__increase-value icon-plus"></button>
+                  </div>
                 </div>
-                <label class="search-form__label" for="kids-field">Дети:</label>
-                <div class="search-form__input-group search-form__input-group_age">
-                  <button type="button" class="search-form__decrease-value">-</button>
-                  <input class="search-form__input" type="text" name="kids" id="kids-field">
-                  <button type="button" class="search-form__increase-value">+</button>
+                <div class="search-form__age-group">
+                  <label class="search-form__label" for="kids-field">Дети:</label>
+                  <div class="search-form__button-group">
+                    <button type="button" class="search-form__decrease-value icon-minus"></button>
+                    <input class="search-form__input" type="text" name="kids" id="kids-field">
+                    <button type="button" class="search-form__increase-value icon-plus"></button>
+                  </div>
                 </div>
                 <button class="search-form__button" type="submit">Найти</button>
               </form>
@@ -138,9 +143,9 @@
           <a class="hash__link" href="#" target="_blank">#visitsedona</a>
         </section>
         <section class="socials">
-          <a class="socials__link" href="#" target="_blank">twitter</a>
-          <a class="socials__link" href="#" target="_blank">facebook</a>
-          <a class="socials__link" href="#" target="_blank">youtube</a>
+          <a class="socials__link icon-twitter" href="#" target="_blank"></a>
+          <a class="socials__link icon-facebook" href="#" target="_blank"></a>
+          <a class="socials__link icon-youtube" href="#" target="_blank"></a>
         </section>
         <section class="copyright">
           <span class="copyright__label">Website by</span>
