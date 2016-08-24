@@ -288,8 +288,8 @@ img {
 .advantage-item__subtitle,
 .advantage-item__text {
   font-size: 14px;
-  font-weight: 21px;
-  color: 333333;
+  line-height: 21px;
+  color: #333333;
   text-transform: uppercase;
 }
 
@@ -420,7 +420,7 @@ img {
 
 .search-form__age-group .search-form__input {
   width: 38px;
-  padding: 5px 10px;
+  padding: 3px 8px;
   text-align: center;
 }
 
@@ -689,6 +689,7 @@ img {
   line-height: 31px;
   text-transform: uppercase;
   color: #ffffff;
+  height: 31px;
 }
 
 .slider__input:focus {
