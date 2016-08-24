@@ -11,14 +11,14 @@
     <div class="container">
       <header class="main-header">
         <div class="header-logo">
-          <a class="header-logo__link" href="/"><img class="header-logo__image" src="img/logo.png" alt="Седона логотип" width="138" height="70" ></a>
+          <a class="header-logo__link" href="index.html"><img class="header-logo__image" src="img/logo.png" alt="Седона логотип" width="138" height="70" ></a>
         </div>
         <nav class="main-navigation">
           <ul class="main-navigation__list">
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Информация</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Фото и&nbsp;видео</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Карта шатата</a></li>
-            <li class="main-navigation__item"><a class="main-navigation__link" href="#">Гостиницы</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link main-navigation__link_active">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -71,50 +71,74 @@
                 <a href="#" class="sorting__control sorting__control_by-raiting">По рейтингу</a>
               </div>
               <div class="sorting__direction">
-                <span class="sorting__control sorting__control_ascending sorting__control_active">&uarr;</span>
-                <a href="#" class="sorting__control sorting__control_descending">&darr;</a>
+                <a href="#" class="sorting__control sorting__control_ascending"></a>
+                <span class="sorting__control sorting__control_descending sorting__control_active"></span>
               </div>
             </div>
           </header>
-          <article class="hotel">
+          <article class="hotel clearfix">
             <img class="hotel__image" src="img/amara.jpg" alt="Фото гостиницы Amara Resort & Spa" width="135" height="90">
             <div class="hotel__info">
-              <h3 class="hotel__name">Amara Resort & Spa</h3>
-              <span class="hotel__type">Гостиница</span>
-              <span class="hotel__price">от 3500 р.</span>
-              <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
-              <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              <h3 class="hotel__name"><a class="hotel__link" href="#">Amara Resort & Spa</a></h3>
+              <div class="hotel__info-group">
+                <span class="hotel__type">Гостиница</span>
+                <span class="hotel__price">от 3500 р.</span>
+              </div>
+              <div class="hotel__button-group">
+                <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
+                <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="hotel__rating-block">
-              <div class="hotel__rating-stars">Иконочный шрифт</div>
+              <div class="hotel__rating-stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
               <span class="hotel__rating-average">Рейтинг: 8,5</span>
             </div>
           </article>
-          <article class="hotel">
+          <article class="hotel clearfix">
             <img class="hotel__image" src="img/desert.jpg" alt="Фото мотеля Desert Quail Inn" width="135" height="90">
             <div class="hotel__info">
-              <h3 class="hotel__name">Desert Quail Inn</h3>
-              <span class="hotel__type">Мотель</span>
-              <span class="hotel__price">от 2000 р.</span>
-              <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
-              <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              <h3 class="hotel__name"><a class="hotel__link" href="#">Desert Quail Inn</a></h3>
+              <div class="hotel__info-group">
+                <span class="hotel__type">Мотель</span>
+                <span class="hotel__price">от 2000 р.</span>
+              </div>
+              <div class="hotel__button-group">
+                <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
+                <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="hotel__rating-block">
-              <div class="hotel__rating-stars">Иконочный шрифт</div>
+              <div class="hotel__rating-stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
               <span class="hotel__rating-average">Рейтинг: 8,9</span>
             </div>
           </article>
-          <article class="hotel">
+          <article class="hotel clearfix">
             <img class="hotel__image" src="img/villas.jpg" alt="Фото аппартаментов Villas at Poco Diablo" width="135" height="90">
             <div class="hotel__info">
-              <h3 class="hotel__name">Villas at Poco Diablo</h3>
-              <span class="hotel__type">Аппартаменты</span>
-              <span class="hotel__price">от 4000 р.</span>
-              <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
-              <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              <h3 class="hotel__name"><a class="hotel__link" href="#">Villas at Poco Diablo</a></h3>
+              <div class="hotel__info-group">
+                <span class="hotel__type">Апартаменты</span>
+                <span class="hotel__price">от 4000 р.</span>
+              </div>
+              <div class="hotel__button-group">
+                <a class="hotel__button hotel__button_more" href="#">Подробнее</a>
+                <a class="hotel__button hotel__button_book" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="hotel__rating-block">
-              <div class="hotel__rating-stars">Иконочный шрифт</div>
+              <div class="hotel__rating-stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
               <span class="hotel__rating-average">Рейтинг: 9,2</span>
             </div>
           </article>

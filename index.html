@@ -18,7 +18,7 @@
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Информация</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Фото и&nbsp;видео</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Карта шатата</a></li>
-            <li class="main-navigation__item"><a class="main-navigation__link" href="#">Гостиницы</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -102,27 +102,31 @@
             <div class="search">
               <a class="search__form-open" href="#">Поиск гостиницы в&nbsp;Седоне</a>
               <form class="search-form" action="#" method="post">
-                <label class="search-form__label" for="arrival-field">Дата заезда:</label>
-                <div class="search-form__input-group">
+                <div class="search-form__date-group clearfix">
+                  <label class="search-form__label" for="arrival-field">Дата заезда:</label>
                   <input class="search-form__input" type="text" name="arrival" id="arrival-field">
                   <span class="search-form__calendar-icon icon-calendar"></span>
                 </div>
-                <label class="search-form__label" for="departure-field">Дата выезда:</label>
-                <div class="search-form__input-group">
+                <div class="search-form__date-group clearfix">
+                  <label class="search-form__label" for="departure-field">Дата выезда:</label>
                   <input class="search-form__input" type="text" name="departure" id="departure-field">
                   <span class="search-form__calendar-icon icon-calendar"></span>
                 </div>
-                <label class="search-form__label" for="adult-field">Взрослые:</label>
-                <div class="search-form__input-group search-form__input-group_age">
-                  <button type="button" class="search-form__decrease-value icon-minus"></button>
-                  <input class="search-form__input" type="text" name="adult" id="adult-field">
-                  <button type="button" class="search-form__increase-value icon-plus"></button>
+                <div class="search-form__age-group">
+                  <label class="search-form__label" for="adult-field">Взрослые:</label>
+                  <div class="search-form__button-group">
+                    <button type="button" class="search-form__decrease-value icon-minus"></button>
+                    <input class="search-form__input" type="text" name="adult" id="adult-field">
+                    <button type="button" class="search-form__increase-value icon-plus"></button>
+                  </div>
                 </div>
-                <label class="search-form__label" for="kids-field">Дети:</label>
-                <div class="search-form__input-group search-form__input-group_age">
-                  <button type="button" class="search-form__decrease-value icon-minus"></button>
-                  <input class="search-form__input" type="text" name="kids" id="kids-field">
-                  <button type="button" class="search-form__increase-value icon-plus"></button>
+                <div class="search-form__age-group">
+                  <label class="search-form__label" for="kids-field">Дети:</label>
+                  <div class="search-form__button-group">
+                    <button type="button" class="search-form__decrease-value icon-minus"></button>
+                    <input class="search-form__input" type="text" name="kids" id="kids-field">
+                    <button type="button" class="search-form__increase-value icon-plus"></button>
+                  </div>
                 </div>
                 <button class="search-form__button" type="submit">Найти</button>
               </form>
