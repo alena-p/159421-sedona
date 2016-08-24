@@ -354,6 +354,7 @@ img {
 .search-form__button-group,
 .search-form__age-group {
   display: inline-block;
+  vertical-align: top;
 }
 
 .search-form__input {
@@ -505,6 +506,7 @@ img {
 
 .hash__link {
   display: inline-block;
+  vertical-align: middle;
   font-size: 21px;
   line-height: 46px;
   font-weight: bold;
@@ -669,11 +671,13 @@ img {
 
 .slider__label {
   display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 31px;
   text-transform: uppercase;
   color: #ffffff;
   margin-left: 65px;
+  height: 31px
 }
 
 .slider__label:nth-of-type(2) {
@@ -681,7 +685,9 @@ img {
 }
 
 .slider__input {
+  padding: 0;
   display: inline-block;
+  vertical-align: middle;
   width: 70px;
   background-color: transparent;
   border: none;
@@ -792,6 +798,7 @@ img {
 .sorting__types,
 .sorting__direction {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .sorting {
@@ -917,6 +924,7 @@ img {
   text-transform: uppercase;
   color: #333333;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .hotel__type {
@@ -930,6 +938,7 @@ margin-right: 7px;
 
 .hotel__button {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
