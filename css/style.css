@@ -171,15 +171,21 @@ img {
   margin: 0;
   background-color: #81b3d2;
   color: #ffffff;
+  overflow: hidden;
 }
 
-.advantage__image {
+.advantage__image-block {
   width: 66.666666666%;
+  position: relative;
   float: left;
 }
 
-.advantage__image_right {
+.advantage__image-block_right {
   float:right;
+}
+
+.advantage__image {
+  position: absolute;
 }
 
 .advantage__info {
