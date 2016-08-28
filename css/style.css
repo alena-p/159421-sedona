@@ -331,8 +331,8 @@ img {
 .search__form-open,
 .search__form-open:link,
 .search__form-open:visited,
-.search__form-open:active,
-.search__form-open:hover {
+.search__form-open:hover,
+.search__form-open:active {
   display: block;
   width: 548px;
   height: 27px;
@@ -516,9 +516,9 @@ img {
 .hash__link,
 .hash__link:link,
 .hash__link:visited,
+.hash__link:focus,
 .hash__link:hover,
-.hash__link:active,
-.hash__link:focus {
+.hash__link:active {
   display: inline-block;
   vertical-align: middle;
   font-size: 21px;
