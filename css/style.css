@@ -502,7 +502,8 @@ img {
   text-align: center;
 }
 
-.hash__link {
+.hash__link,
+.hash__link:link {
   display: inline-block;
   vertical-align: middle;
   font-size: 21px;
@@ -517,7 +518,8 @@ img {
   font-size: 0;
 }
 
-.socials__link {
+.socials__link,
+.socials__link:link {
   display: inline-block;
   background-color: #81b3d2;
   font-size: 19px;
@@ -901,7 +903,8 @@ img {
   text-transform: uppercase;
 }
 
-.hotel__link {
+.hotel__link,
+.hotel__link:link {
   color: #000000;
   text-decoration: none;
 }
