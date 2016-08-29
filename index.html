@@ -92,19 +92,19 @@
               <form class="search-form" action="#" method="post">
                 <div class="search-form__date-group clearfix">
                   <label class="search-form__label" for="arrival-field">Дата заезда:</label>
-                  <input class="search-form__input" type="text" name="arrival" id="arrival-field">
+                  <input class="search-form__input" type="text" name="arrival" id="arrival-field" maxlength="20">
                   <span class="search-form__calendar-icon icon-calendar"></span>
                 </div>
                 <div class="search-form__date-group clearfix">
                   <label class="search-form__label" for="departure-field">Дата выезда:</label>
-                  <input class="search-form__input" type="text" name="departure" id="departure-field">
+                  <input class="search-form__input" type="text" name="departure" id="departure-field" maxlength="20">
                   <span class="search-form__calendar-icon icon-calendar"></span>
                 </div>
                 <div class="search-form__age-group">
                   <label class="search-form__label" for="adult-field">Взрослые:</label>
                   <div class="search-form__button-group">
                     <button type="button" class="search-form__decrease-value icon-minus"></button>
-                    <input class="search-form__input" type="text" name="adult" id="adult-field" value="0">
+                    <input class="search-form__input" type="text" name="adult" id="adult-field" value="0" maxlength="3">
                     <button type="button" class="search-form__increase-value icon-plus"></button>
                   </div>
                 </div>
@@ -112,7 +112,7 @@
                   <label class="search-form__label" for="kids-field">Дети:</label>
                   <div class="search-form__button-group">
                     <button type="button" class="search-form__decrease-value icon-minus"></button>
-                    <input class="search-form__input" type="text" name="kids" id="kids-field" value="0">
+                    <input class="search-form__input" type="text" name="kids" id="kids-field" value="0" maxlength="3">
                     <button type="button" class="search-form__increase-value icon-plus"></button>
                   </div>
                 </div>

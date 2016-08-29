@@ -732,9 +732,7 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.slider__controls:before {
-  content: "";
-  display: block;
+.slider__range {
   width: 86%;
   height: 100%;
   background-color: #ffffff;
@@ -850,6 +848,10 @@ img {
   margin-right: 30px;
 }
 
+.sorting__name {
+  font-size: 0;
+}
+
 .sorting__control:hover {
   color: #81b3d2;
 }
@@ -868,7 +870,7 @@ img {
 .sorting__control_descending {
   font-family: "symbols-sedona";
   font-size: 23px;
-  line-height: 20px;
+  line-height: 23px;
   text-decoration: none;
   border: none;
   margin-right: 0;
@@ -1022,6 +1024,10 @@ margin-right: 7px;
   width: auto;
   margin-right: 0;
   margin-left: 3px;
+}
+
+.hotel__rating-total {
+  font-size: 0;
 }
 
 .hotel__rating-average {

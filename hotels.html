@@ -48,11 +48,12 @@
               <legend class="hotels-filter__title">Стоимость в&nbsp;сутки (р):</legend>
               <div class="slider">
                 <label class="slider__label" for="price-min-field">От</label>
-                <input class="slider__input" type="text" name="price-min" id="price-min-field">
+                <input class="slider__input" type="text" name="price-min" id="price-min-field" maxlength="6">
                 <label class="slider__label" for="price-max-field">До</label>
-                <input class="slider__input" type="text" name="price-max" id="price-max-field">
+                <input class="slider__input" type="text" name="price-max" id="price-max-field" maxlength="6">
               </div>
               <div class="slider__controls">
+                <div class="slider__range"></div>
                 <div class="slider__control-min"></div>
                 <div class="slider__control-max"></div>
               </div>
@@ -66,13 +67,13 @@
             <div class="sorting">
               <span class="sorting__title">Сортировка:</span>
               <div class="sorting__types">
-                <span class="sorting__control sorting__control_by-price sorting__control_active">По цене</span>
+                <a class="sorting__control sorting__control_by-price sorting__control_active">По цене</a>
                 <a href="#" class="sorting__control sorting__control_by-type">По типу</a>
                 <a href="#" class="sorting__control sorting__control_by-raiting">По рейтингу</a>
               </div>
               <div class="sorting__direction">
-                <a href="#" class="sorting__control sorting__control_ascending"></a>
-                <span class="sorting__control sorting__control_descending sorting__control_active"></span>
+                <a href="#" class="sorting__control sorting__control_ascending"><span class="sorting__name">По возрастанию</span></a>
+                <a class="sorting__control sorting__control_descending sorting__control_active"><span class="sorting__name">По убыванию</span></a>
               </div>
             </div>
           </header>
@@ -95,6 +96,7 @@
                 <span class="icon-star"></span>
                 <span class="icon-star"></span>
                 <span class="icon-star"></span>
+                <span class="hotel__rating-total">4 звезды</span>
               </div>
               <span class="hotel__rating-average">Рейтинг: 8,5</span>
             </div>
@@ -116,6 +118,7 @@
               <div class="hotel__rating-stars">
                 <span class="icon-star"></span>
                 <span class="icon-star"></span>
+                <span class="hotel__rating-total">2 звезды</span>
               </div>
               <span class="hotel__rating-average">Рейтинг: 8,9</span>
             </div>
@@ -138,6 +141,7 @@
                 <span class="icon-star"></span>
                 <span class="icon-star"></span>
                 <span class="icon-star"></span>
+                <span class="hotel__rating-total">3 звезды</span>
               </div>
               <span class="hotel__rating-average">Рейтинг: 9,2</span>
             </div>
