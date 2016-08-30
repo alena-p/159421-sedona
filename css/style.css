@@ -921,6 +921,7 @@ img {
 
 .hotel__name {
   margin: 0;
+  max-width: 750px;
   margin-top: -5px;
   margin-bottom: 9px;
   font-size: 21px;
