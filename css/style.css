@@ -353,6 +353,11 @@ img {
   background-color: #ffffff;
 }
 
+.search__form-icon {
+  font-size: 0;
+  line-height: 0;
+}
+
 .search-form__label {
   font-size: 14px;
   line-height: 38px;
