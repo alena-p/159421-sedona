@@ -680,6 +680,7 @@ img {
   margin-left: 10px;
   margin-bottom: 20px;
   position: relative;
+  border-radius: 2px;
 }
 
 .slider:before {
@@ -787,6 +788,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .hotels-filter__button:hover {
