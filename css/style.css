@@ -433,7 +433,10 @@ img {
 
 .search-form__date-group .search-form__input {
   width: 346px;
-  padding: 5px 38px 5px 15px;
+  padding-top: 5px;
+  padding-right: 38px;
+  padding-bottom: 5px;
+  padding-left: 15px;
   float: right;
 }
 
