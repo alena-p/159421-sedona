@@ -1061,8 +1061,7 @@ margin-right: 7px;
 }
 
 .hotel__rating-stars .icon-star:before {
-  width: auto;
-  margin-right: 0;
+  margin-right: -3px;
   margin-left: 3px;
 }
 
