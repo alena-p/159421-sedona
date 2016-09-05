@@ -16,7 +16,6 @@ formOpenLink.addEventListener("click", function(event) {
     form.classList.add("search-form_show");
     form.classList.remove("search-form_hide");
   }
-  formField[0].focus();
   if ( storageAdult ) {
     adultField.value = storageAdult;
   };

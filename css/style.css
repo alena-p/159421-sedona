@@ -41,7 +41,7 @@
 
 /*common*/
 body {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -837,15 +837,10 @@ img {
 .hotel {
   position: relative;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
   padding-left: 6%;
   padding-right: 6%;
   border-bottom: 1px solid #e5e5e5;
-}
-
-.hotel {
-  padding-top: 29.5px;
-  padding-bottom: 29.5px;
 }
 
 .hotels-list__results {
@@ -1056,7 +1051,7 @@ margin-right: 7px;
 }
 
 .hotel__rating-stars {
-  margin-bottom: 44px;
+  margin-bottom: 39px;
   font-size: 18px;
   line-height: 18px;
   text-transform: uppercase;
